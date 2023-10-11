@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+
+@font-face {
+    font-family: epicfont;
+    src: url(haydes.ttf);
+}
+  
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #232323;
+  height: 1800px;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.parallax {
+  position: absolute;
+}
+.parallax.floor {
+  width: 100%;
+  height: 786px;
+  left: 0;
+  top: 250px;
+  background-image: url("https://ucarecdn.com/0f8cc77a-d43a-449b-b89f-f09a5f321d14/floornew.png");
+  background-position: 50% 50%;
+  background-repeat: repeat-x;
+}
+.parallax.layer:nth-of-type(2) {
+  width: 2560px;
+  height: 201px;
+  left: 50%;
+  top: 290px;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  background-image: url(https://ucarecdn.com/2e109c0b-770d-4f4d-9e1c-5d9c948e2ea5/layer4new.png);
+}
+.parallax.layer:nth-of-type(3) {
+  width: 2560px;
+  height: 324px;
+  left: 50%;
+  top: 325px;
+  opacity: 0.8;
+  transform: translateX(-50%);
+  background-image: url(https://ucarecdn.com/7258c13b-37d7-4a16-a3d4-9b170af26ab4/layer3new.png);
+}
+.parallax.layer:nth-of-type(4) {
+  width: 2561px;
+  height: 276px;
+  left: 50%;
+  top: 530px;
+  opacity: 0.85;
+  transform: translateX(-50%);
+  background-image: url(https://ucarecdn.com/179da4ab-4ea6-4d9d-aed7-adc22eccd11e/layer2new.png);
+}
+.parallax.layer:nth-of-type(5) {
+  width: 2560px;
+  height: 790px;
+  left: 50%;
+  top: 270px;
+  transform: translateX(-50%);
+  background-image: url(https://ucarecdn.com/b9bfe089-6faf-4f96-a7df-37bba7543552/layer1new.png);
+}
+.parallax.layer:nth-of-type(6) {
+  width: 3194px;
+  height: 958px;
+  left: 50%;
+  top: 395px;
+  transform: translateX(-50%);
+  opacity: 0.9;
+  background-image: url(https://ucarecdn.com/125b69a3-b60c-44fc-aece-f6a3829f9058/layer0new.png);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.headline {
+  padding-top: 60px;
+  text-align: center;
+  position: relative;
+}
+.headline p {
+  font-size: 130px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Audiowide", "Open Sans", sans-serif;
+  color: #fefefe;
+  animation: fadeIn 1s;
+  margin: 130px auto 24px;
+}
+.headline .scroll-down {
+  animation: fadeIn 1s;
+}
+.headline span {
+  font-size: 16px;
+  color: #fefefe;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: rgba(68, 68, 68, 0.8);
+  padding: 4px 16px 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 20px;
+}
+.headline span.bouncing {
+  animation: bouncing 1.5s infinite 1s;
+}
+.headline span.unvisible {
+  transition: opacity 0.7s ease;
+  opacity: 0;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  
+  font-size: 700%;
+  text-align: center;
+  
+  color: #fefefe;
+  animation: fadeIn 3s;
+  float: left;
+  height: 20%;
+      font-family: epicfont;
+}
+
+.button {
+  font-family: "SF Pro Display", "Open Sans", sans-serif;
+  color: #dbd2d2;
+  text-decoration: none;
+  
+  
+  font-size: 150%;
+  z-index: 10;
+  
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+  position: fixed;
+  right: 0%;
+  top: 5%;
+  opacity: 0;
+  z-index:99;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  #navbar-right {
+    float: none;
+  }
+}
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+      font-family: 'Impact';
+    font-size: 66px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+
+
+body {
+    background-color: black;
+}
