@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+
+    <title>Tesla Model S</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        background-color:black;
+      }
+
+      .car {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url(https://i.imgur.com/NiSDsZO.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .car-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+      }
+
+      .car-header h1 {
+        font-size: 3rem;
+        margin: 0;
+      }
+
+      .car-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+      }
+
+      .btn1 {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        border-color: #e0e2e1;
+        font-size: 1rem;
+        padding: 10px;
+        width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .btn2 {
+        background-color: #222222;
+        border: 2px solid #222222;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 10px;
+        width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+
+        cursor: pointer;
+      }
+      .text1 {
+        position: absolute;
+        bottom: 85%;
+        left: 7%;
+        font-weight: 300;
+        font-size: 130%;
+        font-family: sans-serif;
+      }
+      .text2 {
+        position: absolute;
+        bottom: 65%;
+        left: 7%;
+        font-weight: 600;
+        font-size: 2rem;
+        font-family:  sans-serif;
+      }
+      .text3 {
+        position: absolute;
+        top: 20%;
+        right:3%;
+        
+        width:30%;
+       
+        font-size: 100%;
+        font-family:  cursive;
+      }
+      table{
+        color:white;
+      }
+      .img{
+        width:100%;
+      }
+      .centeralign{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      #smalltable{
+        width:60%;
+        position: absolute;
+        left:20%
+      }
+    </style>
+  </head>
+  <body>
+    <div class="car">
+      <div class="car-header">
+        <h1>Tesla Model S</h1>
+      </div>
+      <div class="car-footer">
+        <div class="text1">Tesla Model S</div>
+        <div class="text2">Designed for Efficiency</div>
+        <button class="btn1">Order Now</button>
+        <button class="btn2">View Inventory</button>
+        <div class="text3">Wtih a drag coefficient of just 0.20f, the lowest on the planet, this model is built for speed, endurance and rage. Improved aerodynamics and an improved chassis allow more responsive performance. <div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+   <div id="smalltable">
+    <table>
+      
+        <tr>
+          <td class="centeralign">Staggered, performance wheels and tires keep the car planted and help transfer maximum power down to the road.</td>
+          <td><img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1620,w_2880,c_fit,f_auto,q_auto:best/Model-S-Exterior-Grid-A-Desktop-Global" alt="Image 1" class="img"></td>
+         
+        </tr>
+        <tr>
+          
+          <td><img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1620,w_2880,c_fit,f_auto,q_auto:best/Model-S-Exterior-Grid-B-Desktop-Global" alt="Image 2" class="img" ></td>
+          <td class="centeralign">Attention to detail on all exterior surfaces makes Model S the most aerodynamic production car on Earth.</td>
+        </tr>
+        <tr>
+            <td class="centeralign">An iconic silhouette meets refreshed, elegant proportions.</td>
+            <td><img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1620,w_2880,c_fit,f_auto,q_auto:best/Model-S-Exterior-Grid-C-Desktop-Global" alt="Image 1" class="img"></td>
+           
+          </tr>
+    
+      </table>
+    </div>
+  </body>
+</html>
